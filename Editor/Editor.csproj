@@ -109,6 +109,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AcceptanceStateController.cs" />
     <Compile Include="Controllers\IDEController.cs" />
+    <Compile Include="Controllers\ParserStack.cs" />
     <Compile Include="Controllers\ScannigInputController.cs" />
     <Compile Include="Controllers\TransitionTableController.cs" />
     <Compile Include="Global.asax.cs">
@@ -138,6 +139,7 @@
     <Folder Include="files\" />
     <Folder Include="Models\" />
     <Folder Include="Views\AcceptanceState\" />
+    <Folder Include="Views\Parser\" />
     <Folder Include="Views\ScannigInput\" />
     <Folder Include="Views\TransitionTable\" />
   </ItemGroup>

@@ -27,6 +27,8 @@ namespace Editor.Controllers
             return View("~/Views/IDE/Index.cshtml");
         }
 
+
+       
         public ActionResult ScanBrowseFile(HttpPostedFileBase txtFile)
         {
             string texts = uploadFileToServer(txtFile);
