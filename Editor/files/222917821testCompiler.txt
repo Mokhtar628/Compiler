@@ -1,0 +1,8 @@
+@ Type {
+    Ipok aa = ValueLess;
+    If( a>=b){
+     Valueless;
+    }Else{
+      break;
+    }
+}

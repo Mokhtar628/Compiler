@@ -1,0 +1,42 @@
+## first of all make sure to open git bach from inside your project folder ##
+
+1- git clone <link>  -- to clone repo into your pc
+
+-- to upload any change --
+2- git add . 
+--this add all file
+3- git commit -m "commit-message"
+--commit this add
+4- git push origin <branch name>
+-- to push from local device to the global one
+
+-- to make sure that the commit done successfully --
+5- git log 
+--shows all commits with author and date
+
+-- to get last changes in the project --
+6- git pull origin <branch name>
+
+-- to reset your modifications before "commit" --
+7- git reset --hard
+
+## work at the same time ##
+-- to  work at the same time we need to create branch for each teammate --
+8- git branch
+-- to know the current branch
+
+9- git checkout -b <new-branch-name>
+-- to create new branch
+
+10- git remote add origin <repo-link>
+--do it once--
+
+
+-- after you finish editing in your branch you need to merge your branch with the master --
+FIRST: open our project in github
+SECOND: from code tab -> choose your branch
+THIRD: press "new pull request"
+FOURTH: choose -> base:master and compare:your_branch
+FIFTH: choose the green button "merge pull request"
+
+## make sure to pull before pushing any changes ##

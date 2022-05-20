@@ -1,0 +1,9 @@
+S-> Single resposibility-> each class and function only responsible for only one thing "function do one thing"
+O-> Open Closed-> open extension closed modification
+L-> Liskov Substitution-> when a subclass didn't need a function in superclass which mean an object of a superclass cannot be replaced by objects of subclass "bird fly and not fly"
+I-> Interface Segregation-> when subclass have to override a function in superclass, so you throw an exeption in those function "gas and electric car -also applied in liskov- "
+D-> Dependency inversion->  high level module shoudnot depend on low level module both should depend on abstraction which in turn not depend on details but details should depend on it.
+abstraction = interface
+highlevel module = class use the interface and set which low level module
+low level module = class use the interface and seted by highlevel module
+"switch on/off and tele, lamb and van"

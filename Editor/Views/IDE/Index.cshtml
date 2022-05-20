@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Content/editor/editor.css" rel="stylesheet" />
+
+
+<div class="split left">
+    <div class="centered">
+        @using (Html.BeginForm("Scan", "IDE"))
+        {
+            <div>
+                <textarea id="lineCounter" class="lineCounter"></textarea>
+                <textarea name="input" id="codeEditor" class="inputField" onKeyUp="textSuggest(this.form.input);">@if(ViewBag.input != null) {@ViewBag.input}</textarea><br />
+            </div>
+            <input type="submit" value="Scan" class="btn btn-warning scanBtn" />
+            <select name="suggestField" id="suggestField" class="suggestion" onchange="SelectedValue(this)">
+                <option selected value="">Show Suggestions</option>
+            </select>
+        }
+
+        <div class="browseDiv">
+            @using (Html.BeginForm("ScanBrowseFile", "IDE", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <span style="color:black">Browse file</span>
+                <input class="btn btn-info" value="Browse" style="width:120px; height:30px;" onclick="document.getElementById('getFile').click()">
+                <input type='file' id="getFile" name="txtFile" style="display:none">
+                <input type="submit" value="Scan file" class="btn btn-info" />
+            }
+        </div>
+    </div>
+</div>
+
+<div class="split right">
+    <div class="centered outputDiv">
+        @foreach (var item in ViewBag.output)
+        {
+            <p>@item</p>
+        }
+    </div>
+</div>
+<script src="~/Content/editor/editor.js"></script>
+
+
+
+
+
+

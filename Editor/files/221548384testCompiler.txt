@@ -1,0 +1,5 @@
+@ Type person{
+a=4;
+c>=3;
+3reg = s;
+}
